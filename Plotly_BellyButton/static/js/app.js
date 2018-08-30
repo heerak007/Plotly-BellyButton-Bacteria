@@ -54,7 +54,9 @@ function buildCharts(sample) {
       values: sampledata.sample_values.slice(0,10),
       labels: sampledata.otu_ids.slice(0,10),
       type: "pie",
-      textinfo: sampledata.otu_labels.slice(0,10)
+      hovertext: sampledata.otu_labels.slice(0,10)
+      // text:sampledata.otu_labels.slice(0,10),
+      // textinfo:'percent'
     };
     var piedata = [pietrace];
     var pielayout = {title:"Sample Data top 10"};
